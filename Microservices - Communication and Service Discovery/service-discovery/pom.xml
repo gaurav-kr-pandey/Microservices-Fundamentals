@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.learn</groupId>
-	<artifactId>movie-catalog-service</artifactId>
+	<artifactId>service-discovery</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>movie-catalog-service</name>
-	<description>Demo project on how to Communicate within Microservices and  learn about Service Discovery.</description>
+	<name>service-discovery</name>
+	<description>A Discovery Server that is used to discover all the available Eureka Clients.</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -21,12 +21,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 
 		<dependency>
